@@ -1,13 +1,22 @@
+-- Item Subgroups
+local compostables_subgroup = {
+    type = "item-subgroup",
+    name = "compostables",
+    group = "intermediate-products",
+    order = "b",
+}
+
+
 -- Wood Chips
 local wood_chips_icon = "__compostables__/graphics/wood-chips.png"
 local wood_chips_item = {
     type = "item",
     name = "wood-chips",
     localised_name = "Wood Chips",
-    item_group = "intermediate-products",
+    subgroup = "compostables",
     icon = wood_chips_icon,
     icon_size = 64,
-    order = "a",
+    order = "a[wood-chips]",
     stack_size = 100,
 }
 local wood_chips_recipe = {
@@ -30,10 +39,10 @@ local compost_item = {
     type = "item",
     name = "compost",
     localised_name = "Compost",
-    item_group = "intermediate-products",
+    subgroup = "compostables",
     icon = compost_icon,
     icon_size = 64,
-    order = "a",
+    order = "a[compost]",
     stack_size = 100,
     spoil_result = "landfill",
     spoil_ticks = 600
@@ -71,6 +80,7 @@ local compost_wood_chips_recipe = {
 }
 
 data:extend({
+    compostables_subgroup,
     wood_chips_item,
     wood_chips_recipe,
     compost_item,
