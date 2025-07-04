@@ -6,7 +6,9 @@
     "author": "RR",
     "contact": "Private",
     "homepage": "",
-    "description": "Compostables",
-    "dependencies": ["base >= 2.0"],
+    "description": "Introduces composting mechanics to Factorio!\n\nCreate wood chips from wood, then combine them with water to make compost.\nThe compost naturally spoils into landfill over time, providing a renewable source of landfill for base building.\n\nFeatures two composting methods: using spoilage or wood chips with water.\nPerfect for players who want more sustainable resource management and additional landfill production options.",
+    "dependencies": [
+      "base >= 2.0"
+    ],
     "spoiling_required": true
   }
