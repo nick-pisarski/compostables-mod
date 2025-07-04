@@ -1,0 +1,12 @@
+  {
+    "name": "compostables",
+    "version": "0.1.0",
+    "factorio_version": "2.0",
+    "title": "Compostables",
+    "author": "RR",
+    "contact": "Private",
+    "homepage": "",
+    "description": "Compostables",
+    "dependencies": ["base >= 2.0"],
+    "spoiling_required": true
+  }
